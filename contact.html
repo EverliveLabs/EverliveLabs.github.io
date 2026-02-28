@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Everlive Labs</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 140px 24px 80px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input,
+        textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+            color: var(--text-primary);
+            font-size: 16px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--accent-color);
+        }
+
+        .contact-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #0077ed;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body>
+    <site-header></site-header>
+
+    <section class="content">
+        <h1>Get in Touch</h1>
+        <p>Have questions, feedback, or just want to say hello? We'd love to hear from you.</p>
+        <form action="https://formsubmit.co/itsyashlive@gmail.com" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit" class="contact-button">Send Message</button>
+        </form>
+    </section>
+
+    <site-footer></site-footer>
+    <script src="components.js"></script>
+</body>
+
+</html>

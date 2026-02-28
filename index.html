@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everlive Labs</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            text-align: center;
+            padding: 180px 20px 120px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 1.05;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            margin: 0 0 16px;
+            background: linear-gradient(180deg, #fff, #bcaec5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 19px;
+            line-height: 1.3;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .key {
+            background: linear-gradient(180deg, #4a4a4c, #2c2c2e);
+            border: 1px solid #58585a;
+            border-radius: 8px;
+            padding: 14px 24px;
+            font-size: 20px;
+            font-weight: 500;
+            box-shadow: 0 4px 0 #1c1c1e, 0 8px 20px rgba(0, 0, 0, 0.4);
+            color: #fff;
+            min-width: 44px;
+            font-family: inherit;
+        }
+
+        .cta-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #0077ed;
+            transform: scale(1.02);
+        }
+
+        .app-showcase {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 40px 24px 100px;
+            text-align: center;
+        }
+
+        .video-container {
+            margin-bottom: 80px;
+        }
+
+        .app-video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .screenshots-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            align-items: start;
+        }
+
+        .screenshot-item:first-child {
+            grid-column: span 2;
+        }
+
+        .showcase-tagline {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-top: 16px;
+            line-height: 1.4;
+            padding: 0 8px;
+        }
+
+        .app-screenshot {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .app-screenshot:hover {
+            transform: scale(1.02);
+        }
+
+        .product-label {
+            color: var(--accent-color);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 100px;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: #a1a1a6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <site-header></site-header>
+
+    <section class="hero">
+        <img src="assets/app-icon.png" alt="Optimal Desktop Icon" class="app-icon">
+        <h1>Optimal Desktop</h1>
+        <div class="product-label">A native, instant-access workspace that blends into your desktop.</div>
+        <p class="subtitle">Optimal Desktop is your native, lightweight workspace for Mac that combines a Focus Timer,
+            Task Management, and Quick Notes, Calendar and quote into a single, sleek interface. It’s designed to be the
+            "antidote" to heavy, bloated productivity apps keeping everything just one shortcut away without slowing
+            down the system.</p>
+
+
+        <a href="#" class="cta-button">Get Optimal Desktop for macOS</a>
+    </section>
+
+    <section class="app-showcase">
+        <div class="video-container">
+            <img src="assets/app-demo.gif" alt="Optimal Desktop Demo" class="app-video">
+            <p class="showcase-tagline">Your entire workspace, one shortcut away.</p>
+        </div>
+        <div class="screenshots-container">
+            <div class="screenshot-item">
+                <img src="assets/screenshot1.png" alt="Screenshot 1" class="app-screenshot">
+                <p class="showcase-tagline">A beautiful, customizable dashboard.</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot2.png" alt="Screenshot 2" class="app-screenshot">
+                <p class="showcase-tagline">Glance at your day's agenda.</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot3.png" alt="Screenshot 3" class="app-screenshot">
+                <p class="showcase-tagline">Widget-specific customization bar.</p>
+            </div>
+        </div>
+    </section>
+
+    <site-footer></site-footer>
+
+    <script src="components.js"></script>
+</body>
+
+</html>
