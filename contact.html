@@ -38,7 +38,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            max-width: 400px;
+            max-width: 500px;
             margin: 0 auto;
         }
 
@@ -53,6 +53,11 @@
             font-family: inherit;
             outline: none;
             transition: border-color 0.2s;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
         }
 
         input:focus,
@@ -92,6 +97,7 @@
             <input type="hidden" name="_template" value="table">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="_subject" placeholder="Subject" required>
             <textarea name="message" rows="5" placeholder="Message" required></textarea>
             <button type="submit" class="contact-button">Send Message</button>
         </form>
