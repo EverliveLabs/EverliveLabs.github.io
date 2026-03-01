@@ -47,7 +47,7 @@ class SiteFooter extends HTMLElement {
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Service</a>
                 </div>
-                <p>&copy; 2024 Everlive Labs. All rights reserved.</p>
+                <p>&copy; 2026 Everlive Labs. All rights reserved.</p>
             </footer>
         `;
     }
