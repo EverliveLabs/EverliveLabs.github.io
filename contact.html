@@ -87,16 +87,56 @@
     <section class="content">
         <h1>Get in Touch</h1>
         <p>Have questions, feedback, or just want to say hello? We'd love to hear from you.</p>
-        <form action="https://formsubmit.co/itsyashlive@gmail.com" method="POST" class="contact-form">
+        <form action="https://formsubmit.co/itsyashlive@gmail.com" method="POST" class="contact-form" id="contactForm">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required>
             <textarea name="message" rows="5" placeholder="Message" required></textarea>
             <button type="submit" class="contact-button">Send Message</button>
         </form>
+        <div id="formMessage" style="display: none; margin-top: 24px; font-size: 18px; color: var(--accent-color);">
+        </div>
     </section>
 
     <site-footer></site-footer>
     <script src="components.js"></script>
+    <script>
+        const form = document.getElementById('contactForm');
+        const messageDiv = document.getElementById('formMessage');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sending...';
+            btn.style.opacity = '0.7';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        form.style.display = 'none';
+                        messageDiv.style.display = 'block';
+                        messageDiv.innerText = "Thanks for reaching out! We'll get back to you soon.";
+                    } else {
+                        alert("Oops! There was a problem submitting your message. Please try again later.");
+                        btn.innerText = originalText;
+                        btn.style.opacity = '1';
+                    }
+                })
+                .catch(error => {
+                    alert("Oops! There was a problem submitting your message. Please try again later.");
+                    btn.innerText = originalText;
+                    btn.style.opacity = '1';
+                });
+        });
+    </script>
 </body>
 
 </html>
