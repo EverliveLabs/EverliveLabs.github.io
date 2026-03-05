@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Everlive Labs</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pricing-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 140px 24px 80px;
+            text-align: center;
+        }
+
+        .pricing-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .pricing-header p {
+            color: var(--text-secondary);
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+
+        .pricing-cards {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            width: 100%;
+            max-width: 300px;
+            text-align: left;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .price {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .price span {
+            font-size: 18px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0;
+            flex-grow: 1;
+        }
+
+        .features li {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .features li svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        .buy-button {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+            box-sizing: border-box;
+        }
+
+        .buy-button.primary {
+            background: var(--accent-color);
+        }
+
+        .buy-button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <site-header></site-header>
+
+    <div class="pricing-container">
+        <div class="pricing-header">
+            <h1>Simple, Transparent Pricing</h1>
+            <p>Choose the plan that fits your workflow. No hidden fees.</p>
+        </div>
+
+        <div class="pricing-cards">
+            <!-- Monthly Plan -->
+            <div class="card">
+                <div class="card-title">Monthly Plan</div>
+                <div class="price">$3.99 <span>/ month</span></div>
+                <p style="color: var(--text-secondary);">Perfect for trying out the workspace.</p>
+                <ul class="features">
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Includes a 7-day free trial</li>
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Full access to all features</li>
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Cancel anytime</li>
+                </ul>
+                <a href="#" class="buy-button">Start Free Trial</a>
+            </div>
+
+            <!-- Yearly Plan -->
+            <div class="card" style="border-color: var(--accent-color);">
+                <div class="card-title">Yearly Plan</div>
+                <div class="price">$37.99 <span>/ year</span></div>
+                <p style="color: var(--text-secondary);">Best value for power users.</p>
+                <ul class="features">
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Includes a 7-day free trial</li>
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Save over 20%</li>
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Priority support</li>
+                </ul>
+                <a href="#" class="buy-button primary">Start Free Trial</a>
+            </div>
+        </div>
+    </div>
+
+    <site-footer></site-footer>
+    <script src="components.js"></script>
+</body>
+
+</html>

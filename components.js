@@ -6,7 +6,9 @@ class SiteHeader extends HTMLElement {
                     <a href="index.html" class="logo">Everlive Labs</a>
                     <div class="nav-links">
                         <a href="about.html">About</a>
+                        <a href="pricing.html">Pricing</a>
                         <a href="contact.html">Contact</a>
+                        <a href="download.html" class="nav-cta">Download</a>
                     </div>
                 </nav>
             </header>
@@ -46,6 +48,7 @@ class SiteFooter extends HTMLElement {
                 <div class="footer-links">
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Service</a>
+                    <a href="refund.html">Refund Policy</a>
                 </div>
                 <p>&copy; 2026 Everlive Labs. All rights reserved.</p>
             </footer>

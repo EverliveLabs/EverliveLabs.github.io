@@ -50,6 +50,7 @@ nav {
     display: flex;
     gap: 24px;
     font-size: 15px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -60,6 +61,20 @@ nav {
 
 .nav-links a:hover {
     color: var(--text-primary);
+}
+
+.nav-cta {
+    background-color: var(--accent-color);
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-cta:hover {
+    background-color: #0077ed;
+    transform: scale(1.05);
 }
 
 /* Footer */
