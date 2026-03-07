@@ -35,16 +35,17 @@
         }
 
         .card {
-            background: var(--card-bg);
+            background: #111d31;
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
-            padding: 30px;
+            padding: 24px;
             width: 100%;
-            max-width: 300px;
+            max-width: 280px;
             text-align: left;
             transition: transform 0.2s;
             display: flex;
             flex-direction: column;
+            position: relative;
         }
 
         .card:hover {
@@ -53,15 +54,14 @@
         }
 
         .card-title {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
         }
 
         .price {
-            font-size: 40px;
+            font-size: 36px;
             font-weight: 700;
-            margin-bottom: 8px;
         }
 
         .price span {
@@ -70,15 +70,20 @@
             font-weight: 400;
         }
 
+        .plan-desc {
+            color: var(--text-secondary);
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+
         .features {
             list-style: none;
             padding: 0;
-            margin: 24px 0;
             flex-grow: 1;
         }
 
         .features li {
-            margin-bottom: 16px;
+            margin-bottom: 10px;
             color: var(--text-secondary);
             display: flex;
             align-items: center;
@@ -113,6 +118,22 @@
         .buy-button:hover {
             opacity: 0.9;
         }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
     </style>
 </head>
 
@@ -130,7 +151,7 @@
             <div class="card">
                 <div class="card-title">Monthly Plan</div>
                 <div class="price">$3.99 <span>/ month</span></div>
-                <p style="color: var(--text-secondary);">Perfect for trying out the workspace.</p>
+                <p class="plan-desc">Perfect for trying out the workspace.</p>
                 <ul class="features">
                     <li><svg viewBox="0 0 24 24">
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
@@ -147,9 +168,10 @@
 
             <!-- Yearly Plan -->
             <div class="card" style="border-color: var(--accent-color);">
+                <div class="badge">Most Popular</div>
                 <div class="card-title">Yearly Plan</div>
                 <div class="price">$37.99 <span>/ year</span></div>
-                <p style="color: var(--text-secondary);">Best value for power users.</p>
+                <p class="plan-desc">Best value for power users.</p>
                 <ul class="features">
                     <li><svg viewBox="0 0 24 24">
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
