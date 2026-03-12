@@ -50,8 +50,8 @@ nav {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .nav-links {
@@ -285,8 +285,8 @@ site-header {
 }
 
 .app-icon {
-    width: 128px;
-    height: 128px;
+    width: 105px;
+    height: 105px;
     border-radius: 28px;
     margin-bottom: 32px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -807,8 +807,8 @@ textarea:focus {
 }
 
 .download-container .app-icon {
-    width: 96px;
-    height: 96px;
+    width: 105px;
+    height: 105px;
     margin-bottom: 32px;
 }
 
