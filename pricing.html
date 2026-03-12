@@ -4,192 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - Everlive Labs</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Pricing - Optimal Desktop</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .pricing-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 140px 24px 80px;
-            text-align: center;
-        }
-
-        .pricing-header h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 24px;
-        }
-
-        .pricing-header p {
-            color: var(--text-secondary);
-            font-size: 18px;
-            margin-bottom: 60px;
-        }
-
-        .pricing-cards {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: #111d31;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            padding: 24px;
-            width: 100%;
-            max-width: 280px;
-            text-align: left;
-            transition: transform 0.2s;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-color);
-        }
-
-        .card-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .price {
-            font-size: 36px;
-            font-weight: 700;
-        }
-
-        .price span {
-            font-size: 18px;
-            color: var(--text-secondary);
-            font-weight: 400;
-        }
-
-        .plan-desc {
-            color: var(--text-secondary);
-            margin-top: 7px;
-            margin-bottom: 7px;
-        }
-
-        .features {
-            list-style: none;
-            padding: 0;
-            flex-grow: 1;
-        }
-
-        .features li {
-            margin-bottom: 10px;
-            color: var(--text-secondary);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .features li svg {
-            width: 20px;
-            height: 20px;
-            fill: var(--accent-color);
-            flex-shrink: 0;
-        }
-
-        .buy-button {
-            display: block;
-            width: 100%;
-            padding: 16px;
-            border-radius: 12px;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.2s;
-            box-sizing: border-box;
-        }
-
-        .buy-button.primary {
-            background: var(--accent-color);
-        }
-
-        .buy-button:hover {
-            opacity: 0.9;
-        }
-
-        .badge {
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: var(--accent-color);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            white-space: nowrap;
-        }
-    </style>
 </head>
 
 <body>
     <site-header></site-header>
 
-    <div class="pricing-container">
+    <div class="pricing-container content-container-animate">
         <div class="pricing-header">
-            <h1>Simple, Transparent Pricing</h1>
-            <p>Choose the plan that fits your workflow. No hidden fees.</p>
+            <h1>Get Optimal Desktop</h1>
+            <p><a href="download.html">Download</a> and <strong>Start your 7-day free trial</strong> with full access
+                to all features.</p>
+            <p class="pricing-no-card">No credit card required.</p>
         </div>
+
+        <h2 class="pricing-subheading">Subscribe to a monthly or yearly plan after the trial period.</h2>
 
         <div class="pricing-cards">
             <!-- Monthly Plan -->
             <div class="card">
                 <div class="card-title">Monthly Plan</div>
-                <div class="price">$3.99 <span>/ month</span></div>
-                <p class="plan-desc">Perfect for trying out the workspace.</p>
+                <div class="price">$4.99 <span>/ month</span></div>
+                <p class="plan-desc">Ideal for flexible, month-to-month use.</p>
                 <ul class="features">
                     <li><svg viewBox="0 0 24 24">
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                        </svg>Includes a 7-day free trial</li>
-                    <li><svg viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                        </svg>Full access to all features</li>
+                        </svg>Pay-As-You-Go</li>
                     <li><svg viewBox="0 0 24 24">
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                         </svg>Cancel anytime</li>
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Regular Updates</li>
                 </ul>
-                <a href="#" class="buy-button">Start Free Trial</a>
+                <a href="download.html" class="buy-button primary">Choose Plan</a>
             </div>
 
             <!-- Yearly Plan -->
-            <div class="card" style="border-color: var(--accent-color);">
+            <div class="card card-popular">
                 <div class="badge">Most Popular</div>
                 <div class="card-title">Yearly Plan</div>
-                <div class="price">$37.99 <span>/ year</span></div>
+                <div class="price">$47.99 <span>/ year</span></div>
                 <p class="plan-desc">Best value for power users.</p>
                 <ul class="features">
                     <li><svg viewBox="0 0 24 24">
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                        </svg>Includes a 7-day free trial</li>
-                    <li><svg viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                        </svg>Save over 20%</li>
+                        </svg>2 Months Free (Save $12)</li>
                     <li><svg viewBox="0 0 24 24">
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                         </svg>Priority support</li>
+                    <li><svg viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>Regular Updates</li>
                 </ul>
-                <a href="#" class="buy-button primary">Start Free Trial</a>
+                <a href="download.html" class="buy-button primary">Choose Plan</a>
             </div>
         </div>
     </div>
 
     <site-footer></site-footer>
     <script src="components.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contentElements = document.querySelectorAll('.content-container-animate > *');
+            contentElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 100);
+            });
+        });
+    </script>
 </body>
 
 </html>

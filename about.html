@@ -4,49 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Everlive Labs</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>About - Optimal Desktop</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .content {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 140px 24px 80px;
-        }
-
-        .content h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 24px;
-        }
-
-        .content p {
-            color: var(--text-secondary);
-            font-size: 18px;
-            margin-bottom: 24px;
-            line-height: 1.6;
-        }
-    </style>
 </head>
 
-<body>
+<body class="about-page">
     <site-header></site-header>
 
-    <section class="content">
-        <h1>About Everlive Labs</h1>
-        <p>Everlive Labs is a digital product studio dedicated to crafting software that feels like an extension of your
+    <section class="content content-container-animate">
+        <h1>About Optimal Desktop</h1>
+        <p>Optimal Desktop was created with a simple philosophy: to build software that feels like an extension of your
             mind. We believe in the power of native, lightweight applications that respect your system resources and
             your attention.</p>
-        <p>Our flagship product, Optimal Desktop, was born out of a frustration with bloated, slow productivity tools.
-            We wanted a native, lightweight workspace that lives on your desktop—visible at a glance and accessible with
-            a single keystroke—to significantly enhance your productivity and workflow. It started with the basic
+        <p>Optimal Desktop, was born out of a frustration with bloated, slow productivity tools.
+            We wanted a native, lightweight workspace that lives on your desktop visible at a glance and accessible with
+            a single keystroke to significantly enhance your productivity and workflow. It started with the basic
             idea of sticking a productive workspace to your desktop, just like sticky notes.
         </p>
-        <p>We combine creativity, design, and precision to build tools for the modern creative professional.</p>
+        <p>Optimal Desktop is built by <a href="https://x.com/EverliveLabs" target="_blank"
+                class="brand-link"><strong>Everlive Labs</strong></a>. We
+            combine creativity, design, and precision to
+            build tools for the modern creative professional.</p>
     </section>
 
     <site-footer></site-footer>
     <script src="components.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contentElements = document.querySelectorAll('.content-container-animate > *');
+            contentElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 100);
+            });
+        });
+    </script>
 </body>
 
 </html>

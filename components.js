@@ -3,7 +3,10 @@ class SiteHeader extends HTMLElement {
         this.innerHTML = `
             <header>
                 <nav>
-                    <a href="index.html" class="logo">Everlive Labs</a>
+                    <a href="index.html" class="logo">
+                        <img src="assets/app-icon.png" alt="Optimal Desktop app icon" class="logo-icon">
+                        Optimal Desktop
+                    </a>
                     <div class="nav-links">
                         <a href="about.html">About</a>
                         <a href="pricing.html">Pricing</a>
@@ -18,7 +21,7 @@ class SiteHeader extends HTMLElement {
         const links = this.querySelectorAll('.nav-links a');
         links.forEach(link => {
             if (link.getAttribute('href') === currentPage) {
-                link.style.color = 'var(--text-primary)';
+                link.classList.add('active');
             }
         });
     }
@@ -34,6 +37,7 @@ class SiteFooter extends HTMLElement {
         this.innerHTML = `
             <footer>
                 ${taglineHTML}
+                <p class="built-by-line">Built by <a href="https://x.com/EverliveLabs" target="_blank" class="brand-link">Everlive Labs</a></p>
                 <div class="social-links">
                     <a href="https://x.com/EverliveLabs" target="_blank" class="social-icon" aria-label="X (Twitter)">
                         <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -50,7 +54,7 @@ class SiteFooter extends HTMLElement {
                     <a href="terms.html">Terms of Service</a>
                     <a href="refund.html">Refund Policy</a>
                 </div>
-                <p>&copy; 2026 Everlive Labs. All rights reserved.</p>
+                <p>&copy; 2026 Optimal Desktop. All rights reserved.</p>
             </footer>
         `;
     }

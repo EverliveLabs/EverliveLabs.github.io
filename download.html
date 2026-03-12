@@ -4,76 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Optimal Desktop - Everlive Labs</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Download - Optimal Desktop</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .download-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 140px 24px 80px;
-            text-align: center;
-        }
-
-        .download-container h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 24px;
-        }
-
-        .download-container p {
-            color: var(--text-secondary);
-            font-size: 18px;
-            margin-bottom: 40px;
-            line-height: 1.6;
-        }
-
-        .download-button {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 16px 40px;
-            border-radius: 980px;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .download-button:hover {
-            background-color: #0077ed;
-            transform: scale(1.02);
-        }
-
-        .pricing-link {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        .pricing-link:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
     <site-header></site-header>
 
-    <div class="download-container">
-        <img src="assets/app-icon.png" alt="Optimal Desktop Icon" class="app-icon" style="width: 96px; height: 96px;">
-        <h1>Get Optimal Desktop</h1>
-        <p>Start your <strong>7-day free trial</strong> with full access to all features. No credit card required to
-            download.</p>
-        <p style="font-size: 16px; margin-top: -20px; margin-bottom: 30px; font-style: italic;"><a href="pricing.html"
-                class="pricing-link">Subscribe to monthly or yearly plan
-                after the trial period.</a></p>
+    <div class="download-container content-container-animate">
+        <img src="assets/app-icon.png" alt="Optimal Desktop Icon" class="app-icon">
+        <h1>Download Optimal Desktop</h1>
         <a href="#" class="download-button">Download for macOS</a>
-        <p style="font-size: 14px; margin-top: 20px; color: var(--text-secondary);">Requires macOS 12.0 or later.</p>
+        <p class="download-os-requirement">Requires macOS 12.0 or later.</p>
+
+        <div class="first-open-guide">
+            <h3>First-Time Opening Guide</h3>
+            <p>As we are working on notarizing the app, you'll need to follow these steps to open it:</p>
+            <ol>
+                <li>After downloading, move the app to your "Applications" folder.</li>
+                <li>Right-click (or Control-click) the app icon and select "Open".</li>
+                <li>A warning dialog will appear. Click "Open" again to confirm.</li>
+            </ol>
+            <p class="guide-note">You only need to do this once. The app will open normally after that.</p>
+        </div>
     </div>
 
     <site-footer></site-footer>
     <script src="components.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contentElements = document.querySelectorAll('.content-container-animate > *');
+            contentElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 100);
+            });
+        });
+    </script>
 </body>
 
 </html>

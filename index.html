@@ -4,146 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everlive Labs</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Optimal Desktop</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .hero {
-            text-align: center;
-            padding: 180px 20px 120px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 64px;
-            line-height: 1.05;
-            font-weight: 700;
-            letter-spacing: -0.015em;
-            margin: 0 0 16px;
-            background: linear-gradient(180deg, #fff, #bcaec5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            font-size: 19px;
-            line-height: 1.3;
-            font-weight: 400;
-            color: var(--text-secondary);
-            margin-bottom: 50px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .key {
-            background: linear-gradient(180deg, #4a4a4c, #2c2c2e);
-            border: 1px solid #58585a;
-            border-radius: 8px;
-            padding: 14px 24px;
-            font-size: 20px;
-            font-weight: 500;
-            box-shadow: 0 4px 0 #1c1c1e, 0 8px 20px rgba(0, 0, 0, 0.4);
-            color: #fff;
-            min-width: 44px;
-            font-family: inherit;
-        }
-
-        .cta-button {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 14px 32px;
-            border-radius: 980px;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            background-color: #0077ed;
-            transform: scale(1.02);
-        }
-
-        .app-showcase {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 40px 24px 100px;
-            text-align: center;
-        }
-
-        .video-container {
-            margin-bottom: 80px;
-        }
-
-        .app-video {
-            width: 100%;
-            max-width: 700px;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .screenshots-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-            align-items: start;
-        }
-
-        .screenshot-item:first-child {
-            grid-column: span 2;
-        }
-
-        .showcase-tagline {
-            font-size: 15px;
-            color: var(--text-secondary);
-            margin-top: 16px;
-            line-height: 1.4;
-            padding: 0 8px;
-        }
-
-        .app-screenshot {
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .app-screenshot:hover {
-            transform: scale(1.02);
-        }
-
-        .product-label {
-            color: var(--accent-color);
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            font-size: 14px;
-            margin-bottom: 24px;
-        }
-
-        .app-icon {
-            width: 128px;
-            height: 128px;
-            border-radius: 28px;
-            margin-bottom: 32px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        footer {
-            margin-top: 100px;
-        }
-
-        .tagline {
-            font-style: italic;
-            margin-bottom: 16px;
-            font-size: 14px;
-            color: #a1a1a6;
-        }
-    </style>
 </head>
 
 <body>
@@ -164,29 +27,288 @@
     </section>
 
     <section class="app-showcase">
-        <div class="video-container">
-            <img src="assets/app-demo.gif" alt="Optimal Desktop Demo" class="app-video">
-            <p class="showcase-tagline">Your entire workspace, one shortcut away.</p>
-        </div>
         <div class="screenshots-container">
             <div class="screenshot-item">
                 <img src="assets/screenshot1.png" alt="Screenshot 1" class="app-screenshot">
-                <p class="showcase-tagline">A beautiful, customizable dashboard.</p>
+                <p class="showcase-tagline">All your essential widgets, beautifully integrated.</p>
             </div>
             <div class="screenshot-item">
                 <img src="assets/screenshot2.png" alt="Screenshot 2" class="app-screenshot">
-                <p class="showcase-tagline">Glance at your day's agenda.</p>
+                <p class="showcase-tagline">Your workspace, your rules.</p>
             </div>
             <div class="screenshot-item">
                 <img src="assets/screenshot3.png" alt="Screenshot 3" class="app-screenshot">
-                <p class="showcase-tagline">Widget-specific customization bar.</p>
+                <p class="showcase-tagline">Your day, at a glance.</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="assets/screenshot4.png" alt="Screenshot 4" class="app-screenshot">
+                <p class="showcase-tagline">Make each widget uniquely yours.</p>
+            </div>
+        </div>
+        <div class="video-container">
+            <!-- Replaced self-hosted video with a performance-friendly YouTube embed -->
+            <iframe class="app-video"
+                src="https://www.youtube.com/embed/jvJixkAdDh8?autoplay=1&mute=1&loop=1&playlist=jvJixkAdDh8&controls=0&rel=0&showinfo=0"
+                title="Optimal Desktop App Demo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <p class="showcase-tagline">See Optimal Desktop in action.</p>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2>Essential Productivity Widgets</h2>
+        <p class="subtitle">Everything you need to stay focused, always just a glance away.</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="assets/widget-focus.png" alt="Focus Timer Widget" class="feature-widget-img">
+                <h3>Focus Timer</h3>
+                <p>A built-in Pomodoro-style timer to help you stay on task and manage your work sessions effectively.
+                </p>
+            </div>
+            <div class=" feature-card">
+                <img src="assets/widget-tasks.png" alt="Task Management Widget" class="feature-widget-img">
+                <h3>Task Management</h3>
+                <p>A simple yet powerful to-do list to keep track of your daily tasks and priorities, always
+                    in view.
+                </p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/widget-notes.png" alt="Quick Notes Widget" class="feature-widget-img">
+                <h3>Quick Notes</h3>
+                <p>Jot down ideas and thoughts instantly with a persistent notes widget right on your desktop.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/widget-calendar.png" alt="Calendar Widget" class="feature-widget-img">
+                <h3>Calendar</h3>
+                <p>See your upcoming events and meetings at a glance, ensuring you never miss an important
+                    appointment.
+                </p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/widget-quote.png" alt="Daily Quotes Widget" class="feature-widget-img">
+                <h3>Daily Quotes</h3>
+                <p>Get a dose of daily inspiration with a new, thought-provoking quote every day to keep you
+                    motivated.
+                </p>
             </div>
         </div>
     </section>
 
-    <site-footer></site-footer>
+    <section class="features-section">
+        <h2>Built for the Modern Mac</h2>
+        <p class="subtitle">Optimal Desktop packs powerful features into a lightweight, native interface.</p>
+        <div class="features-grid">
+            <div class="feature-card feature-card-highlight">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M20 5H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-9 10H9v-2h2v2zm0-3H9V9h2v3zm4 3h-2v-2h2v2zm0-3h-2V9h2v3zm4 3h-2v-2h2v2zm0-3h-2V9h2v3zM7 15H5v-2h2v2zm0-3H5V9h2v3z" />
+                    </svg>
+                </div>
+                <h3>Global Shortcut Access</h3>
+                <p>Toggle your workspace with <strong>⌥+⇧+Space</strong>. Bring it forward for quick access or stick it
+                    to your desktop background.</p>
+            </div>
+            <div class="feature-card feature-card-highlight">
+                <div class="feature-icon"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                    </svg></div>
+                <h3>Effortless Customization</h3>
+                <p>Double-click any widget to change its font, colors, and transparency. Tailor the look and feel of
+                    your workspace with ease.</p>
+            </div>
+            <div class="feature-card feature-card-highlight">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                    </svg>
+                </div>
+                <h3>Privacy-Centric</h3>
+                <p>All your data stays on your device. No cloud, no tracking, no compromises. Your privacy is
+                    paramount.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L8 6h3v3H6v2h5v3H8l4 4 4-4h-3v-3h5V9h-5V6h3L12 2z" />
+                    </svg>
+                </div>
+                <h3>Infinite Layout Flexibility</h3>
+                <p>Enjoy total freedom with drag-and-drop positioning and widget customization. Arrange your workspace
+                    exactly how you want it.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z" />
+                    </svg>
+                </div>
+                <h3>Smart Layout Persistence</h3>
+                <p>Your widgets' position and appearance are auto-saved instantly, staying exactly where you left them
+                    across sessions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                    </svg>
+                </div>
+                <h3>Universal</h3>
+                <p>Optimized for both Intel and Apple Silicon (M-series) chips, ensuring peak native performance on any
+                    Mac.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
+                    </svg>
+                </div>
+                <h3>Automatic Updates</h3>
+                <p>Stay up-to-date with the latest features and improvements with seamless, effortless in-app updates.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <h2>Loved by Users Worldwide</h2>
+        <p class="subtitle">See what creative professionals and developers are saying about Optimal Desktop.</p>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"I've been looking for a stylish note app like this where I can customize the
+                    colors and transparency exactly how I want! It's just perfect."</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-name-wrapper">
+                        <span class="reviewer-name">Anonymous</span>
+                        <div class="verified-checkmark">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="reviewer-title">Working professional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <site-footer class="index-footer"></site-footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-nav prev" aria-label="Previous">&#10094;</button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged screenshot">
+        <button class="lightbox-nav next" aria-label="Next">&#10095;</button>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
 
     <script src="components.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Hero section fade-in on page load
+            const heroElements = document.querySelectorAll('.hero > *');
+            heroElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 100); // Stagger animation by 100ms
+            });
+
+            // Scroll-triggered animations for feature and review cards
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Stagger the animation for elements entering at the same time
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.feature-card, .review-card').forEach(card => {
+                observer.observe(card);
+            });
+
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            const screenshots = Array.from(document.querySelectorAll('.app-screenshot, .feature-widget-img'));
+            const closeBtn = document.querySelector('.lightbox-close');
+            const prevBtn = document.querySelector('.lightbox-nav.prev');
+            const nextBtn = document.querySelector('.lightbox-nav.next');
+            let currentIndex = 0;
+            let idleTimer = null;
+
+            const updateLightbox = (index) => {
+                if (index < 0) index = screenshots.length - 1;
+                if (index >= screenshots.length) index = 0;
+                currentIndex = index;
+
+                const img = screenshots[currentIndex];
+                lightboxImg.src = img.src;
+
+                const parent = img.parentElement;
+                const tagline = parent.querySelector('.showcase-tagline');
+                const heading = parent.querySelector('h3');
+                lightboxCaption.textContent = tagline ? tagline.textContent : (heading ? heading.textContent : '');
+            };
+
+            screenshots.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    updateLightbox(index);
+                    lightbox.classList.add('active');
+                    resetIdleTimer();
+                });
+            });
+
+            const closeLightbox = () => {
+                lightbox.classList.remove('active');
+                lightbox.classList.remove('controls-hidden');
+                clearTimeout(idleTimer);
+            };
+
+            const resetIdleTimer = () => {
+                lightbox.classList.remove('controls-hidden');
+                clearTimeout(idleTimer);
+                idleTimer = setTimeout(() => {
+                    lightbox.classList.add('controls-hidden');
+                }, 2000); // Hide controls after 2 seconds of inactivity
+            };
+
+            // Listen for mouse movement on the lightbox itself
+            lightbox.addEventListener('mousemove', resetIdleTimer);
+
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                updateLightbox(currentIndex - 1);
+            });
+
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                updateLightbox(currentIndex + 1);
+            });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox || e.target === closeBtn) closeLightbox();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') updateLightbox(currentIndex - 1);
+                if (e.key === 'ArrowRight') updateLightbox(currentIndex + 1);
+            });
+        });
+    </script>
 </body>
 
 </html>
