@@ -723,10 +723,30 @@ textarea:focus {
     font-weight: 400;
 }
 
+.price .price-asterisk {
+    font-size: 26px;
+    vertical-align: super;
+    font-weight: 400;
+    margin-left: 1px;
+    color: var(--text-secondary);
+}
+
+.tax-note {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-top: -5px;
+}
+
 .plan-desc {
     color: var(--text-secondary);
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+.tax-disclaimer {
+    margin-top: 40px;
+    font-size: 15px;
+    color: var(--text-secondary);
 }
 
 .features {
@@ -995,4 +1015,30 @@ p.download-os-requirement {
 .lightbox.controls-hidden .lightbox-nav,
 .lightbox.controls-hidden .lightbox-close {
     opacity: 0;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 16px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .screenshots-container,
+    .features-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
 }
