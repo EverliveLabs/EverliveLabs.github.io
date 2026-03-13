@@ -7,8 +7,6 @@
     <title>Pricing - Optimal Desktop</title>
     <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Load Paddle.js -->
-    <script src="https://cdn.paddle.com/v2/paddle.js"></script>
 </head>
 
 <body>
@@ -72,6 +70,8 @@
 
     <site-footer></site-footer>
     <script src="components.js"></script>
+    <!-- Load Paddle.js -->
+    <script src="https://cdn.paddle.com/v2/paddle.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const contentElements = document.querySelectorAll('.content-container-animate > *');
@@ -82,13 +82,23 @@
             });
 
             // Initialize Paddle
-            // IMPORTANT: Replace 'REPLACE_WITH_YOUR_CLIENT_TOKEN' with your actual Client-side Token from Paddle
-            Paddle.Initialize({ token: 'live_6006c47b874fe32a000d8db9673' });
+            if (typeof Paddle !== 'undefined') {
+                // IMPORTANT: Replace 'REPLACE_WITH_YOUR_CLIENT_TOKEN' with your actual Client-side Token from Paddle
+                Paddle.Initialize({ token: 'live_6006c47b874fe32a000d8db9673' });
+            } else {
+                console.error("Paddle.js failed to load. This is often caused by ad blockers.");
+            }
 
             // Handle "Choose Plan" clicks
             document.querySelectorAll('.choose-plan-btn').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.preventDefault(); // Prevent the link from navigating
+
+                    if (typeof Paddle === 'undefined') {
+                        alert("Checkout could not be opened because Paddle.js failed to load. Please disable your ad blocker and refresh the page.");
+                        return;
+                    }
+
                     const priceId = btn.getAttribute('data-price-id');
 
                     Paddle.Checkout.open({
