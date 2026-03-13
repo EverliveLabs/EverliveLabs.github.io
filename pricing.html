@@ -70,9 +70,14 @@
 
     <site-footer></site-footer>
     <script src="components.js"></script>
-    <!-- Load Paddle.js -->
-    <script src="https://cdn.paddle.com/v2/paddle.js"></script>
     <script>
+        // Initialize Paddle when the script is successfully loaded
+        function initPaddle() {
+            if (typeof Paddle !== 'undefined') {
+                Paddle.Initialize({ token: 'live_6006c47b874fe32a000d8db9673' });
+            }
+        }
+
         document.addEventListener("DOMContentLoaded", function () {
             const contentElements = document.querySelectorAll('.content-container-animate > *');
             contentElements.forEach((el, index) => {
@@ -80,14 +85,6 @@
                     el.classList.add('visible');
                 }, index * 100);
             });
-
-            // Initialize Paddle
-            if (typeof Paddle !== 'undefined') {
-                // IMPORTANT: Replace 'REPLACE_WITH_YOUR_CLIENT_TOKEN' with your actual Client-side Token from Paddle
-                Paddle.Initialize({ token: 'live_6006c47b874fe32a000d8db9673' });
-            } else {
-                console.error("Paddle.js failed to load. This is often caused by ad blockers.");
-            }
 
             // Handle "Choose Plan" clicks
             document.querySelectorAll('.choose-plan-btn').forEach(btn => {
@@ -111,6 +108,10 @@
             });
         });
     </script>
+    <!-- Load Paddle.js -->
+    <!-- We place this AFTER defining initPaddle to ensure the function exists when onload fires -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js" data-cfasync="false" onload="initPaddle()"
+        onerror="console.warn('Paddle failed to load. Likely blocked by browser extension.')"></script>
 </body>
 
 </html>
