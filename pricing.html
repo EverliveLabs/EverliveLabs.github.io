@@ -7,6 +7,8 @@
     <title>Pricing - Optimal Desktop</title>
     <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
+    <!-- Load Paddle.js -->
+    <script src="https://cdn.paddle.com/v2/paddle.js"></script>
 </head>
 
 <body>
@@ -39,7 +41,9 @@
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                         </svg>Regular Updates</li>
                 </ul>
-                <a href="download.html" class="buy-button primary">Choose Plan</a>
+                <a href="#" class="buy-button primary choose-plan-btn"
+                    data-price-id="pri_01kk4n332rkvneb9kh7jxy40wf">Choose
+                    Plan</a>
             </div>
 
             <!-- Yearly Plan -->
@@ -59,7 +63,9 @@
                             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                         </svg>Regular Updates</li>
                 </ul>
-                <a href="download.html" class="buy-button primary">Choose Plan</a>
+                <a href="#" class="buy-button primary choose-plan-btn"
+                    data-price-id="pri_01kk6cgxsjs575jkezjxydp96z">Choose
+                    Plan</a>
             </div>
         </div>
     </div>
@@ -73,6 +79,25 @@
                 setTimeout(() => {
                     el.classList.add('visible');
                 }, index * 100);
+            });
+
+            // Initialize Paddle
+            // IMPORTANT: Replace 'REPLACE_WITH_YOUR_CLIENT_TOKEN' with your actual Client-side Token from Paddle
+            Paddle.Initialize({ token: 'live_6006c47b874fe32a000d8db9673' });
+
+            // Handle "Choose Plan" clicks
+            document.querySelectorAll('.choose-plan-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent the link from navigating
+                    const priceId = btn.getAttribute('data-price-id');
+
+                    Paddle.Checkout.open({
+                        items: [{
+                            priceId: priceId,
+                            quantity: 1
+                        }]
+                    });
+                });
             });
         });
     </script>
