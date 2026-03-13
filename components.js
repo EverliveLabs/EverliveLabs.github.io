@@ -17,10 +17,13 @@ class SiteHeader extends HTMLElement {
             </header>
         `;
 
-        const currentPage = window.location.pathname.split("/").pop();
+        const currentPath = window.location.pathname;
+        const pathBase = currentPath.split("/").pop().replace('.html', '');
         const links = this.querySelectorAll('.nav-links a');
+
         links.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
+            const hrefBase = link.getAttribute('href').replace('.html', '');
+            if (pathBase === hrefBase || ((pathBase === '' || pathBase === 'index') && hrefBase === 'index')) {
                 link.classList.add('active');
             }
         });

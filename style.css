@@ -491,6 +491,7 @@ site-header {
 .content h1 {
     font-size: 32px;
     margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .content h2 {
@@ -529,6 +530,7 @@ site-header {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 24px;
+    margin-top: 0;
 }
 
 .about-page .content p {
@@ -564,6 +566,7 @@ site-header {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 24px;
+    margin-top: 0;
 }
 
 .contact-page .content p {
@@ -643,6 +646,7 @@ textarea:focus {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 24px;
+    margin-top: 0;
 }
 
 .pricing-header p {
