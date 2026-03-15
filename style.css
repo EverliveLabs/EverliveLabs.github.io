@@ -26,6 +26,7 @@ header {
     -webkit-backdrop-filter: blur(20px);
     z-index: 100;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 12px rgba(17, 136, 255, 0.5);
 }
 
 nav {
@@ -316,6 +317,20 @@ site-header {
     align-items: start;
     text-align: left;
     margin-top: 60px;
+}
+
+/* Flexbox override for centered widget cards */
+.features-grid.widgets-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    /* 32px */
+}
+
+.features-grid.widgets-center .feature-card {
+    box-sizing: border-box;
+    flex: 0 1 310px;
 }
 
 .feature-card {
@@ -1040,5 +1055,13 @@ p.download-os-requirement {
     .features-grid,
     .reviews-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Add padding to main content to prevent overlap with taller mobile nav */
+    .hero,
+    .content,
+    .pricing-container,
+    .download-container {
+        padding-top: 140px;
     }
 }
