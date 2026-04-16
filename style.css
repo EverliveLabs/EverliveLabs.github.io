@@ -194,7 +194,7 @@ site-header {
     line-height: 1.3;
     font-weight: 400;
     color: var(--text-secondary);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -235,7 +235,12 @@ site-header {
 }
 
 .video-container {
-    margin-bottom: 0px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.video-container .showcase-tagline {
+    margin-top: 0;
 }
 
 .app-video {
@@ -250,9 +255,9 @@ site-header {
 .screenshots-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 56px 24px;
     align-items: start;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 .screenshots-container .screenshot-item:nth-child(n+3) {
@@ -269,7 +274,8 @@ site-header {
 .showcase-tagline {
     font-size: 15px;
     color: var(--text-secondary);
-    margin-top: 16px;
+    margin-top: 12px;
+    /* Tighter grouping between image and its description */
     line-height: 1.4;
     padding: 0 8px;
 }
