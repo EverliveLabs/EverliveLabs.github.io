@@ -855,7 +855,7 @@ textarea:focus {
 }
 
 .download-container h1 {
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 24px;
@@ -871,13 +871,29 @@ textarea:focus {
 .download-container .app-icon {
     width: 105px;
     height: 105px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 p.download-os-requirement {
     font-size: 15px;
     margin-top: 20px;
     color: var(--text-secondary);
+}
+
+p.virus-total-report {
+    font-size: 15px;
+    margin-top: 15px;
+    color: var(--text-secondary);
+}
+
+p.virus-total-report a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p.virus-total-report a:hover {
+    text-decoration: underline;
 }
 
 .download-button {
@@ -909,7 +925,7 @@ p.download-os-requirement {
 
 .first-open-guide {
     max-width: 600px;
-    margin: 60px auto 0;
+    margin: 0px auto 40px;
     padding: 24px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -932,15 +948,17 @@ p.download-os-requirement {
 }
 
 .first-open-guide .guide-note {
-    font-size: 14px;
-    margin-top: 16px;
+    font-family: inherit;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    word-break: break-word;
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
-.first-open-guide ol {
-    padding-left: 20px;
-    color: var(--text-secondary);
-    font-size: 16px;
-    line-height: 1.7;
+.first-open-guide .guide-note:last-child {
+    margin-bottom: 0;
 }
 
 /* --- components.js --- */
