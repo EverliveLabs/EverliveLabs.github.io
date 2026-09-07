@@ -850,28 +850,28 @@ textarea:focus {
 .download-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 90px 24px 80px;
+    padding: 90px 24px 60px;
     text-align: center;
 }
 
 .download-container h1 {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 24px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .download-container p {
     color: var(--text-secondary);
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1.6;
 }
 
 .download-container .app-icon {
     width: 105px;
     height: 105px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 p.download-os-requirement {
@@ -882,7 +882,8 @@ p.download-os-requirement {
 
 p.virus-total-report {
     font-size: 15px;
-    margin-top: 15px;
+    margin-top: -15px;
+    margin-bottom: 30px;
     color: var(--text-secondary);
 }
 
@@ -925,7 +926,7 @@ p.virus-total-report a:hover {
 
 .first-open-guide {
     max-width: 600px;
-    margin: 0px auto 40px;
+    margin: 0px auto 30px;
     padding: 24px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
