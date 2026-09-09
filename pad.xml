@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PADFILE>
+  <Master_PAD>
+    <PAD_Version>3.10</PAD_Version>
+  </Master_PAD>
+  <Company_Info>
+    <Company_Name>Everlive Labs</Company_Name>
+    <Contact_First_Name>Yashpal</Contact_First_Name>
+    <Contact_Last_Name>Dhargawe</Contact_Last_Name>
+    <Contact_Email>itsyashlive@gmail.com</Contact_Email>
+  </Company_Info>
+  <Program_Info>
+    <Program_Name>Optimal Desktop</Program_Name>
+    <Program_Version>1.2.0</Program_Version>
+    <Program_Type>Commercial</Program_Type>
+    <Program_Category_Class>Productivity</Program_Category_Class>
+    <Program_OS>macOS</Program_OS>
+    <Program_Cost_Dollars>4.99 $</Program_Cost_Dollars>
+    <Program_Descriptions>
+      <English>
+        <Keywords>macOS, utility, focus timer, notes, calendar, productivity, tauri</Keywords>
+        <Char_Desc_45>The antidote to bloated productivity apps.</Char_Desc_45>
+        <Char_Desc_250>Optimal Desktop is a native, privacy-first, lightweight floating workspace for macOS combining a Focus Timer, Task Manager, Quick Notes, and Calendar into one toggleable interface.</Char_Desc_250>
+        <Char_Desc_2000>Optimal Desktop is a native, privacy-first, and ultra-lightweight floating workspace that appears instantly over any app with a simple keystroke. It’s a curated layer of essential productivity widgets — Tasks, Notes, Focus Timer, Calendar, and Quotes — designed to keep you in flow without the window-switching chaos.
+
+With Option + Shift + Spacebar, instantly bring your workspace to the front or send it to the background to interact with your desktop files. Fully personalize your setup by dragging, dropping, and customizing widget fonts, colors, and transparency.</Char_Desc_2000>
+      </English>
+    </Program_Descriptions>
+    <Web_Info>
+      <Application_URLs>
+        <Application_Info_URL>https://optimal-desktop.pages.dev</Application_Info_URL>
+        <Application_Order_URL>https://optimal-desktop.pages.dev</Application_Order_URL>
+      <Application_Screenshot_URL>https://optimal-desktop.pages.dev/assets/screenshot1.png</Application_Screenshot_URL>
+        <Application_Icon_URL>https://optimal-desktop.pages.dev/assets/app-icon.png</Application_Icon_URL>
+        <Application_XML_File_URL>https://optimal-desktop.pages.dev/assets/pad.xml</Application_XML_File_URL>
+      </Application_URLs>
+      <Download_URLs>
+        <Primary_Download_URL>https://optimal-desktop.pages.dev/download</Primary_Download_URL>
+      </Download_URLs>
+    </Web_Info>
+  </Program_Info>
+</PADFILE>
