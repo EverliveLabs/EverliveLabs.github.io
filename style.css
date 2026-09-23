@@ -178,7 +178,7 @@ site-header {
 }
 
 .hero h1 {
-    font-size: 64px;
+    font-size: 60px;
     line-height: 1.05;
     font-weight: 700;
     letter-spacing: -0.015em;
@@ -187,6 +187,16 @@ site-header {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.hero-heading-label {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    font-style: italic;
+    color: var(--text-secondary);
+    /* letter-spacing: 0.05em; */
+    margin-bottom: 8px;
 }
 
 .subtitle {
@@ -200,15 +210,6 @@ site-header {
     margin-right: auto;
 }
 
-.hero-heading-label {
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 1.3;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    /* letter-spacing: 0.05em; */
-    margin-bottom: 8px;
-}
 
 .cta-button {
     background-color: var(--accent-color);
